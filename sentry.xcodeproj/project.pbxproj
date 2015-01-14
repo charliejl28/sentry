@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52CA6A7A64FD56A0D3B964C /* libPods-sentry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F8E28AD2D9F7787B9AF636 /* libPods-sentry.a */; };
+		CB1619891A64DC1D00B334AA /* MonitoringViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB1619881A64DC1D00B334AA /* MonitoringViewController.mm */; };
+		CB16198E1A64F20300B334AA /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16198D1A64F20300B334AA /* ItemsViewController.m */; };
+		CB1619911A64F47600B334AA /* Item.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB1619901A64F47600B334AA /* Item.mm */; };
+		CB1619941A64F6ED00B334AA /* AddItemViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB1619931A64F6ED00B334AA /* AddItemViewController.mm */; };
+		CB1619B61A65664100B334AA /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB1619B51A65664100B334AA /* UIImage+OpenCV.mm */; };
+		CB21FE1C1A65B40E00A9434B /* ItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB21FE1B1A65B40E00A9434B /* ItemManager.m */; };
+		CB8298B11A64CF4800B8BBAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8298B01A64CF4800B8BBAD /* main.m */; };
+		CB8298B41A64CF4800B8BBAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8298B31A64CF4800B8BBAD /* AppDelegate.m */; };
+		CB8298B71A64CF4800B8BBAD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8298B61A64CF4800B8BBAD /* FirstViewController.m */; };
+		CB8298BA1A64CF4800B8BBAD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8298B91A64CF4800B8BBAD /* SecondViewController.m */; };
+		CB8298BF1A64CF4A00B8BBAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8298BE1A64CF4A00B8BBAD /* Images.xcassets */; };
+		CB8298CE1A64CF4D00B8BBAD /* sentryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8298CD1A64CF4D00B8BBAD /* sentryTests.m */; };
+		CBAFF5031A6578EB0019DFDE /* ItemChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBAFF5021A6578EB0019DFDE /* ItemChecker.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB8298C81A64CF4D00B8BBAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8298A31A64CF4600B8BBAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB8298AA1A64CF4700B8BBAD;
+			remoteInfo = sentry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F8E28AD2D9F7787B9AF636 /* libPods-sentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sentry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12668728866655D83055C0E1 /* Pods-sentry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sentry.release.xcconfig"; path = "Pods/Target Support Files/Pods-sentry/Pods-sentry.release.xcconfig"; sourceTree = "<group>"; };
+		CB1619871A64DC1D00B334AA /* MonitoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringViewController.h; sourceTree = "<group>"; };
+		CB1619881A64DC1D00B334AA /* MonitoringViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MonitoringViewController.mm; sourceTree = "<group>"; };
+		CB16198A1A64DC5100B334AA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CB16198B1A64DC5100B334AA /* FlatUIColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatUIColors.h; sourceTree = "<group>"; };
+		CB16198C1A64F20200B334AA /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		CB16198D1A64F20300B334AA /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		CB16198F1A64F47500B334AA /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		CB1619901A64F47600B334AA /* Item.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Item.mm; sourceTree = "<group>"; };
+		CB1619921A64F6ED00B334AA /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		CB1619931A64F6ED00B334AA /* AddItemViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddItemViewController.mm; sourceTree = "<group>"; };
+		CB1619B41A65664100B334AA /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		CB1619B51A65664100B334AA /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		CB21FE1A1A65B40E00A9434B /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManager.h; sourceTree = "<group>"; };
+		CB21FE1B1A65B40E00A9434B /* ItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManager.m; sourceTree = "<group>"; };
+		CB8298AB1A64CF4700B8BBAD /* sentry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8298AF1A64CF4800B8BBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8298B01A64CF4800B8BBAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB8298B21A64CF4800B8BBAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB8298B31A64CF4800B8BBAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB8298B51A64CF4800B8BBAD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CB8298B61A64CF4800B8BBAD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CB8298B81A64CF4800B8BBAD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CB8298B91A64CF4800B8BBAD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CB8298BE1A64CF4A00B8BBAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB8298C71A64CF4D00B8BBAD /* sentryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sentryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8298CC1A64CF4D00B8BBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8298CD1A64CF4D00B8BBAD /* sentryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sentryTests.m; sourceTree = "<group>"; };
+		CBAFF5011A6578EB0019DFDE /* ItemChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemChecker.h; sourceTree = "<group>"; };
+		CBAFF5021A6578EB0019DFDE /* ItemChecker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ItemChecker.mm; sourceTree = "<group>"; };
+		CBAFF5041A657AA60019DFDE /* sentry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sentry-Prefix.pch"; sourceTree = "<group>"; };
+		E43D0851987CBB2D7C4A9744 /* Pods-sentry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sentry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sentry/Pods-sentry.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB8298A81A64CF4700B8BBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52CA6A7A64FD56A0D3B964C /* libPods-sentry.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8298C41A64CF4D00B8BBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29FCF8A6DD3EAB6FE077DAE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04F8E28AD2D9F7787B9AF636 /* libPods-sentry.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8298A21A64CF4600B8BBAD = {
+			isa = PBXGroup;
+			children = (
+				CB8298AD1A64CF4700B8BBAD /* sentry */,
+				CB8298CA1A64CF4D00B8BBAD /* sentryTests */,
+				CB8298AC1A64CF4700B8BBAD /* Products */,
+				EBB2BD8A07DCC10E70D58035 /* Pods */,
+				29FCF8A6DD3EAB6FE077DAE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB8298AC1A64CF4700B8BBAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB8298AB1A64CF4700B8BBAD /* sentry.app */,
+				CB8298C71A64CF4D00B8BBAD /* sentryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB8298AD1A64CF4700B8BBAD /* sentry */ = {
+			isa = PBXGroup;
+			children = (
+				CB16198A1A64DC5100B334AA /* Constants.h */,
+				CB16198B1A64DC5100B334AA /* FlatUIColors.h */,
+				CB8298B21A64CF4800B8BBAD /* AppDelegate.h */,
+				CB8298B31A64CF4800B8BBAD /* AppDelegate.m */,
+				CB8298B51A64CF4800B8BBAD /* FirstViewController.h */,
+				CB8298B61A64CF4800B8BBAD /* FirstViewController.m */,
+				CB1619871A64DC1D00B334AA /* MonitoringViewController.h */,
+				CB1619881A64DC1D00B334AA /* MonitoringViewController.mm */,
+				CB16198C1A64F20200B334AA /* ItemsViewController.h */,
+				CB16198D1A64F20300B334AA /* ItemsViewController.m */,
+				CB1619921A64F6ED00B334AA /* AddItemViewController.h */,
+				CB1619931A64F6ED00B334AA /* AddItemViewController.mm */,
+				CB16198F1A64F47500B334AA /* Item.h */,
+				CB1619901A64F47600B334AA /* Item.mm */,
+				CB21FE1A1A65B40E00A9434B /* ItemManager.h */,
+				CB21FE1B1A65B40E00A9434B /* ItemManager.m */,
+				CBAFF5011A6578EB0019DFDE /* ItemChecker.h */,
+				CBAFF5021A6578EB0019DFDE /* ItemChecker.mm */,
+				CB1619B41A65664100B334AA /* UIImage+OpenCV.h */,
+				CB1619B51A65664100B334AA /* UIImage+OpenCV.mm */,
+				CB8298B81A64CF4800B8BBAD /* SecondViewController.h */,
+				CB8298B91A64CF4800B8BBAD /* SecondViewController.m */,
+				CB8298BE1A64CF4A00B8BBAD /* Images.xcassets */,
+				CB8298AE1A64CF4800B8BBAD /* Supporting Files */,
+			);
+			path = sentry;
+			sourceTree = "<group>";
+		};
+		CB8298AE1A64CF4800B8BBAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8298AF1A64CF4800B8BBAD /* Info.plist */,
+				CB8298B01A64CF4800B8BBAD /* main.m */,
+				CBAFF5041A657AA60019DFDE /* sentry-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB8298CA1A64CF4D00B8BBAD /* sentryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8298CD1A64CF4D00B8BBAD /* sentryTests.m */,
+				CB8298CB1A64CF4D00B8BBAD /* Supporting Files */,
+			);
+			path = sentryTests;
+			sourceTree = "<group>";
+		};
+		CB8298CB1A64CF4D00B8BBAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8298CC1A64CF4D00B8BBAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBB2BD8A07DCC10E70D58035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E43D0851987CBB2D7C4A9744 /* Pods-sentry.debug.xcconfig */,
+				12668728866655D83055C0E1 /* Pods-sentry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB8298AA1A64CF4700B8BBAD /* sentry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8298D11A64CF4D00B8BBAD /* Build configuration list for PBXNativeTarget "sentry" */;
+			buildPhases = (
+				C010F13F95197482C074F809 /* Check Pods Manifest.lock */,
+				CB8298A71A64CF4700B8BBAD /* Sources */,
+				CB8298A81A64CF4700B8BBAD /* Frameworks */,
+				CB8298A91A64CF4700B8BBAD /* Resources */,
+				351908CA55F32C504147761D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sentry;
+			productName = sentry;
+			productReference = CB8298AB1A64CF4700B8BBAD /* sentry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB8298C61A64CF4D00B8BBAD /* sentryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8298D41A64CF4D00B8BBAD /* Build configuration list for PBXNativeTarget "sentryTests" */;
+			buildPhases = (
+				CB8298C31A64CF4D00B8BBAD /* Sources */,
+				CB8298C41A64CF4D00B8BBAD /* Frameworks */,
+				CB8298C51A64CF4D00B8BBAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB8298C91A64CF4D00B8BBAD /* PBXTargetDependency */,
+			);
+			name = sentryTests;
+			productName = sentryTests;
+			productReference = CB8298C71A64CF4D00B8BBAD /* sentryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB8298A31A64CF4600B8BBAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Cover;
+				TargetAttributes = {
+					CB8298AA1A64CF4700B8BBAD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CB8298C61A64CF4D00B8BBAD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CB8298AA1A64CF4700B8BBAD;
+					};
+				};
+			};
+			buildConfigurationList = CB8298A61A64CF4600B8BBAD /* Build configuration list for PBXProject "sentry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB8298A21A64CF4600B8BBAD;
+			productRefGroup = CB8298AC1A64CF4700B8BBAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB8298AA1A64CF4700B8BBAD /* sentry */,
+				CB8298C61A64CF4D00B8BBAD /* sentryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB8298A91A64CF4700B8BBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8298BF1A64CF4A00B8BBAD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8298C51A64CF4D00B8BBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		351908CA55F32C504147761D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sentry/Pods-sentry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C010F13F95197482C074F809 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB8298A71A64CF4700B8BBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1619891A64DC1D00B334AA /* MonitoringViewController.mm in Sources */,
+				CB1619941A64F6ED00B334AA /* AddItemViewController.mm in Sources */,
+				CBAFF5031A6578EB0019DFDE /* ItemChecker.mm in Sources */,
+				CB21FE1C1A65B40E00A9434B /* ItemManager.m in Sources */,
+				CB8298BA1A64CF4800B8BBAD /* SecondViewController.m in Sources */,
+				CB8298B41A64CF4800B8BBAD /* AppDelegate.m in Sources */,
+				CB16198E1A64F20300B334AA /* ItemsViewController.m in Sources */,
+				CB1619B61A65664100B334AA /* UIImage+OpenCV.mm in Sources */,
+				CB8298B71A64CF4800B8BBAD /* FirstViewController.m in Sources */,
+				CB1619911A64F47600B334AA /* Item.mm in Sources */,
+				CB8298B11A64CF4800B8BBAD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8298C31A64CF4D00B8BBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8298CE1A64CF4D00B8BBAD /* sentryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB8298C91A64CF4D00B8BBAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB8298AA1A64CF4700B8BBAD /* sentry */;
+			targetProxy = CB8298C81A64CF4D00B8BBAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB8298CF1A64CF4D00B8BBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB8298D01A64CF4D00B8BBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB8298D21A64CF4D00B8BBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43D0851987CBB2D7C4A9744 /* Pods-sentry.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sentry",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = sentry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB8298D31A64CF4D00B8BBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12668728866655D83055C0E1 /* Pods-sentry.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sentry",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = sentry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB8298D51A64CF4D00B8BBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sentryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sentry.app/sentry";
+			};
+			name = Debug;
+		};
+		CB8298D61A64CF4D00B8BBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sentryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sentry.app/sentry";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB8298A61A64CF4600B8BBAD /* Build configuration list for PBXProject "sentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8298CF1A64CF4D00B8BBAD /* Debug */,
+				CB8298D01A64CF4D00B8BBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8298D11A64CF4D00B8BBAD /* Build configuration list for PBXNativeTarget "sentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8298D21A64CF4D00B8BBAD /* Debug */,
+				CB8298D31A64CF4D00B8BBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8298D41A64CF4D00B8BBAD /* Build configuration list for PBXNativeTarget "sentryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8298D51A64CF4D00B8BBAD /* Debug */,
+				CB8298D61A64CF4D00B8BBAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB8298A31A64CF4600B8BBAD /* Project object */;
+}
